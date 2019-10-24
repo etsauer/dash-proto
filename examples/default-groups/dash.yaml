@@ -1,0 +1,17 @@
+verison: 3.0
+resource_groups:
+  - name: Group1
+    resources:
+    - name: Raw Manifests
+      file:
+        path: manifests/
+  - name: Group2
+    resources:
+    - name: Helm Charts
+      helm:
+        chart: stable/redis
+  - name: Group3
+    resources:
+    - name: OpenShift Templates
+      template: openshift-templates/
+      params: openshift-template-params/
