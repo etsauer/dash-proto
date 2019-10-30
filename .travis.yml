@@ -15,6 +15,7 @@ env:
 before_install:
 # Install helm
 - curl -L https://git.io/get_helm.sh | bash
+- helm init --client-only
 # Install kubectl
 - curl -LO ${KUBE_BINARY} && chmod +x ./kubectl && sudo mv ./kubectl /bin/kubectl
 # Install oc
