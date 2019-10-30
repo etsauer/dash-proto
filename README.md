@@ -14,6 +14,7 @@ Currently Dash supports the following templates:
 
 * FileTemplates - not really templates, just static resource definitions
 * [HelmCharts](./docs/helm.md)
+* [OpenShift Templates](./docs/openshift_templates.md)
 
 ## Installation
 
