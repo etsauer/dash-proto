@@ -96,7 +96,7 @@ func (r *Resource) Process(ns *string) error {
 		if err != nil {
 			return err
 		}
-	} else if !reflect.DeepEqual(OpenShiftTemplate{}, r.Helm) {
+	} else if !reflect.DeepEqual(OpenShiftTemplate{}, r.OpenShiftTemplate) {
 		err := r.OpenShiftTemplate.Process(ns, r)
 		if err != nil {
 			return err
