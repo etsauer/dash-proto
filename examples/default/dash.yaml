@@ -17,6 +17,6 @@ resource_groups:
             else: bar
     - name: OpenShift Templates
       openshiftTemplate:
-        template: app-stack.yaml
+        template: templates/app-stack.yaml
         params:
           APP_NAME: dash-nginx
