@@ -160,6 +160,9 @@ func processOneTemplate(tpl string, pF []string, ps map[string]string, r *Resour
 
 func appendFile(files *[]string) filepath.WalkFunc {
 	return func(path string, info os.FileInfo, err error) error {
+		if err != nil {
+			return err
+		}
 		new, err := os.Stat(path)
 		if err != nil {
 			return err
