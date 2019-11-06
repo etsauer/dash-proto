@@ -1,4 +1,4 @@
-verison: 3.0
+version: 3.0
 resource_groups:
   - name: Group1
     resources:
@@ -13,5 +13,6 @@ resource_groups:
   - name: Group3
     resources:
     - name: OpenShift Templates
-      template: openshift-templates/
-      params: openshift-template-params/
+      openshiftTemplate:
+        template: openshift-templates/
+        params: openshift-template-params/
